@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.space {
+    margin: 0 auto;
+    width: 1440px;
+    height: 900px;
+    background-image: url("space.png");
+    position: relative;
+    overflow: hidden;
+}
+
+.planet {
+    width: 600px;
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+
+}
+
+.rocket {
+    height: 200px;
+    position: absolute;
+    left: 300px;
+    top: 400px;
+    transform: rotate(30deg);
+}
+
+.control-panel {
+    width: 500px;
+    height: 260px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(103,113,113,1) 100%, rgba(0,212,255,1) 100%);
+    border: 10px solid pink;
+    border-image: repeating-linear-gradient(
+            55deg,
+            #000,
+            #000 20px,
+            #ffb101 20px,
+            #ffb101 40px
+    ) 10;
+    position: absolute;
+    top: 400px;
+    right: 100px;
+
+
+}
+
+.control-panel__inner {
+    text-align: center;
+}
+
+input[type=password] {
+    width: 300px;
+    border-radius: 24px;
+    border: 1px solid yellow;
+    color: #ffb101;
+    background-color: #384347;
+    outline: none;
+    padding-left: 24px ;
+    margin: 16px;
+}
+
+.ok-button {
+    background-color: yellow;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+}
+
+.launch-button {
+    width: 70px;
+    height: 40px;
+    background-color: red;
+    border-radius: 40%;
+    border: 1px solid white;
+    color: white;
+}
+
+.launch-button:disabled {
+    opacity: .2;
+}
+
+.check-buttons {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.levers {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 16px 0;
+}
+
+input[type=range]{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 20px;
+    height: 80px;
+    /*padding: 0 44px;*/
+    outline: none;
+    background:transparent;
+}
